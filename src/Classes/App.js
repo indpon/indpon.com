@@ -4,7 +4,9 @@ import '../Static/App.css';
 
 
 function App() {
-  <>
+
+  return (
+    <>
 
     <header className='head'>
       <p>Welcome to indpon.com</p>
@@ -19,6 +21,8 @@ function App() {
 
   </>
 
+  )
+  
 }
 
 export default App;
