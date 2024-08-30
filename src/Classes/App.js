@@ -23,9 +23,14 @@ function App() {
         placeholder="Add a new task"
       />
       <button onClick={addTodo}>Add Todo</button>
-      <p>{todos.forEach((todo) => {
-        todo + "\n"
-      })}</p>
+      
+      <ul>
+        {todos.map((todo, index) => (
+          <li key={index}>{todo}</li>
+        ))}
+      </ul>
+
+
     </div>
   );
 }
