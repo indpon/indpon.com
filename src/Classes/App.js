@@ -7,6 +7,8 @@ import Todos from './Todos';
 import Header from './Header';
 import HomePage from './HomePage';
 
+import '../Static/Global.css'
+
 function App() {
   return (
     <Router>
