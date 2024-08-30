@@ -9,9 +9,9 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   const addTodo = () => {
-    if (input.trim()) { // Make sure the input is not empty
-      setTodos([...todos, input]); // Add the new todo to the list
-      setInput(''); // Clear the input field
+    if (input.trim()) { 
+      setTodos([...todos, input]); 
+      setInput('');
     }
   };
 
@@ -23,6 +23,9 @@ function App() {
         placeholder="Add a new task"
       />
       <button onClick={addTodo}>Add Todo</button>
+      <p>{todos.forEach((todo) => {
+        todo + "\n"
+      })}</p>
     </div>
   );
 }
