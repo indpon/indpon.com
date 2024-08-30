@@ -2,23 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import '../Static/App.css'; // Ensure you have this file for styling
 import About from './About';
-
-function Home() {
-  return (
-    <section>
-      <h2>Welcome to indpon.com</h2>
-      <p>(a website made by indpon)</p>
-    </section>
-  );
-}
-
-function About() {
-  return <h2>About Page</h2>;
-}
-
-function CreateUser() {
-  return <h2>Create User Page</h2>;
-}
+import CreateUser from './CreateUser'
 
 function App() {
   return (
