@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; // Import useState
-import '../Static/Todos.css';
+import '../Static/Todo.css';
 
 
 
