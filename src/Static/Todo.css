@@ -1,24 +1,45 @@
 body {
-  background-color: #333;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px auto;
-  max-width: 400px;
-  text-align: left;
-}
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto; /* Adjust margin for centering */
+    max-width: 400px; /* Optional: limits the width of the todo list */
+  }
+  
+  li {
+    margin: 5px 0; /* Reduce spacing between todo items */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
