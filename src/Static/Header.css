@@ -1,13 +1,18 @@
 header {
-    background-color: #444;
+    background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
-  
+
+nav {
+    display: inline-block;
+}
+
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
 }
-  
