@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Static/index.css';
-import App from './Classes/App';
+import App from './Classes/App.js';
 import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
 
