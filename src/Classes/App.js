@@ -1,10 +1,9 @@
-import React, { useState } from 'react'; // Import useState
+import React, { useState } from 'react';
 import '../Static/App.css';
 
 
 
 function App() {
-  // Inside your App component
   <>
 
     <header className='head'>
