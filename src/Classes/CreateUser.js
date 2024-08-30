@@ -13,3 +13,5 @@ function CreateUser() {
         </div>
     )
 }
+
+export default CreateUser;
