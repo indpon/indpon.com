@@ -3,6 +3,9 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+    width: 100%;
+    margin-top: 0%;
+    
 }
   
 nav a {
@@ -10,4 +13,4 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
 }
-  
+
