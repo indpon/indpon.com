@@ -1,28 +1,29 @@
-import React, { useState } from 'react';
-import '../Static/App.css';
-
-
+import React from 'react';
+import '../Static/App.css'; // Ensure you have this file for styling
 
 function App() {
-
   return (
     <>
+      <header>
+        <h1>Welcome to indpon.com</h1>
+        <nav>
+          <a href="/about">About</a>
+          <a href="/create/user">Create User</a>
+          <a target="_blank" rel="noopener noreferrer" href="/discord">Indpon's discord server</a>
+        </nav>
+      </header>
 
-    <header className='head'>
-      <p>Welcome to indpon.com</p>
-    </header>
-
-    <div>
-      <p>
-        Hey, Welcome to indpon.com!
-        <br></br> Im sorry if the website is bad right now. I am currently migrating to React
-      </p>
-    </div>
-
-  </>
-
-  )
-  
+      <main>
+        <section>
+          <h2>Welcome to indpon.com</h2>
+          <p>(a website made by indpon)</p>
+        </section>
+        <footer>
+          <p>&copy; 2024 indpon.com</p>
+        </footer>
+      </main>
+    </>
+  );
 }
 
 export default App;
