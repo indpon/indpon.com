@@ -1,7 +1,5 @@
 import React, { useState } from 'react'; // Import useState
 import '../Static/App.css';
-import Clicker from './Clicker';
-import User from './User.js';
 
 
 
