@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import './MyButton.js'
+import MyButton from './MyButton'
 
 
 
