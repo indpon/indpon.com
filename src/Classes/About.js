@@ -4,9 +4,7 @@ import '../Static/About.css'
 function About() {
   return (
     <>
-      <header>
-        <h1>Welcome to the about page!</h1>
-      </header>
+      
 
       <div className="contentarea">
         <p className="info">
