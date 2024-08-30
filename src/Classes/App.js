@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+import '../Static/App.css';
 import Clicker from './Clicker'
 import User from './User.js'
 
