@@ -38,7 +38,7 @@ ul {
 
 li {
   margin: 5px 0; /* Reduce spacing between todo items */
-  padding: 5px;
+  padding: 10px;
   background-color: #f0f0f0;
-  border-radius: 1.5px;
+  border-radius: 4px;
 }
