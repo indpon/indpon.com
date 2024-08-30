@@ -12,9 +12,10 @@ function CreateUser() {
                 <label htmlFor="password">Password:</label>
                 <input type="password" id="password" name="password" /><br />
                 
-                <input type="submit" value="Create User" />
+                <input disabled type="submit" value="Create User" />
 
                 <h2><b>PLEASE NOTE THIS IS NOT WORKING RIGHT NOW</b></h2>
+                
             </form>
         </div>
     );
