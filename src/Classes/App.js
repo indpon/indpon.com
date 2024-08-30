@@ -7,7 +7,7 @@ import CreateUser from './CreateUser';
 function Header() {
   const location = useLocation();
   // Only render header if the current path is "/"
-  return location.pathname === '/' ? (
+  return location.pathname !== null ? (
     <header>
       <h1>Welcome to indpon.com</h1>
       <nav>
@@ -29,6 +29,10 @@ function App() {
           <Route path="/create/user" element={<CreateUser />} />
         </Routes>
       </main>
+      <section>
+            <h2>Welcome to indpon.com</h2>
+            <p>(a website made by indpon)</p>
+        </section>
       <footer>
         <p>&copy; 2024 indpon.com</p>
       </footer>
