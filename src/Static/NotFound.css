@@ -1,14 +1,14 @@
 .bold {
-    font-style: bold;
-}
+    font-style: bold !important; 
+} 
 
 .notfound {
-    color: red;
-    font-size: xx-large;
-    text-align: center;
+    color: red !important; 
+    font-size: xx-large !important; 
+    text-align: center !important;
 }
 
 a {
-    color: blue;
-    text-align: center;
+    color: blue !important;
+    text-align: center !important;
 }
