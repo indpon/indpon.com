@@ -3,7 +3,7 @@ import '../Static/App.css';
 
 
 
-function App() {
+function Todos() {
   // Inside your App component
   const [input, setInput] = useState('');
   const [todos, setTodos] = useState([]);
@@ -35,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default Todos;
