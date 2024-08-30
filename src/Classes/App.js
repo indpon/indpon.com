@@ -9,7 +9,7 @@ function App() {
         <nav>
           <a href="/about">About</a>
           <a href="/create/user">Create User</a>
-          <a target="_blank" rel="noopener noreferrer" href="discord.gg/K5rxmxvT83">Indpon's discord server</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/K5rxmxvT83">Indpon's discord server</a>
         </nav>
       </header>
 
