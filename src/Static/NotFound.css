@@ -1,0 +1,14 @@
+.bold {
+    font-style: bold;
+}
+
+.notfound {
+    color: red;
+    font-size: xx-large;
+    text-align: center;
+}
+
+a {
+    color: blue;
+    text-align: center;
+}
