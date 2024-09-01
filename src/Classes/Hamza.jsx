@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../Static/Hamza.css'
 
 function Hamza() {
   const [clicks, setClicks] = useState(0);
