@@ -14,7 +14,7 @@ function Hamza() {
       </div>
 
       <div>
-        <button onClick={() => setClicks(clicks + 1)}>{clicks}</button>
+        <button  onClick={() => setClicks(clicks + 1)}>{clicks}</button>
       </div>
     </>
   );
