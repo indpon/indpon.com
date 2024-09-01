@@ -5,9 +5,10 @@ import '../Static/Global.css'
 import About from './About';
 import CreateUser from './CreateUser';
 import Todos from './Todos';
-import Header from './Header';
+import Header from './Header.jsx';
 import HomePage from './HomePage';
 import NotFound from './NotFound';
+import Hamza from './Hamza.jsx';
 
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/create/user" element={<CreateUser />} />
           <Route path="/todo" element={<Todos />} />
+          <Route path="/hamza" element={<Hamza />} />
         </Routes>
       </main>
       <footer>
