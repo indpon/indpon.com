@@ -1,3 +1,3 @@
 export default function handler(req, res) {
-    res.status(200).json({ message: 'This feature is not done yet.'})
+    res.status(200).json({ error: 'This feature is not done yet.'})
 }

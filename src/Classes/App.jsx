@@ -9,6 +9,8 @@ import Header from './Header.jsx';
 import HomePage from './HomePage';
 import NotFound from './NotFound';
 import Hamza from './Hamza.jsx';
+import Blog from './Blog.jsx'
+import Firstblog from './Firstblog.jsx';
 
 
 
@@ -24,6 +26,8 @@ function App() {
           <Route path="/create/user" element={<CreateUser />} />
           <Route path="/todo" element={<Todos />} />
           <Route path="/hamza" element={<Hamza />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/firstblog" element={<Firstblog />} />
         </Routes>
       </main>
       <footer>

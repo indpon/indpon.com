@@ -1,0 +1,54 @@
+body {
+    background-color: #333;
+    color: lightgray;
+}
+
+.Title {
+    background-color: #222;
+    width: 100%;
+
+    position: absolute;
+    top: 12.5%;
+    left: 0%
+}
+
+.firstblog {
+    background-color: #444;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+
+    left: 15%;
+    top: 25%;
+}
+
+.firstblog .title {
+    font-size: x-large;
+}
+
+.gtb_button_1 {
+    background-color: #333;
+    border: 0%;
+    border: none;
+
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+
+    position: absolute;
+    width: 50%;
+    height: 50%;
+
+    left: 25%;
+
+    
+}
+
+.gtb_button_1:hover {
+    cursor: pointer
+}
+
