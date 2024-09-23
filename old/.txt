@@ -1,0 +1,48 @@
+// const uri = "mongodb+srv://everettholbrook1212:Lnf2fdDrwcK8k7SS@cluster0.pp9dq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
+// mongoose.connect(uri, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     serverApi: {
+//       version: mongoose.version,
+//       strict: true,
+//       deprecationErrors: true,
+//     },
+//     maxPoolSize: 10, // Set the maximum number of sockets in the pool
+//     minPoolSize: 5, // Set the minimum number of sockets in the pool
+//     useCreateIndex: true,
+//     useFindAndModify: false
+//   })
+//   .then(() => console.log('Connected to DB'))
+//   .catch((error) => {
+//     console.error('Error connecting to database:', error);
+//     throw error;
+//   });  
+
+
+// const userSchema = new mongoose.Schema({
+//   username: { type: String, required: true },
+//   password: { type: String, required: true },
+//   uuid: { type: String, required: true },
+//   Authkey: { type: String, required: true }
+// });
+
+// const User = mongoose.model('people', userSchema);
+
+//   try {
+    //     const newUser = new User(successdata);
+    //     // await newUser.save();
+    //     res.status(200).json(successdata);
+    //   } catch (error) {
+    //     console.error('Error inserting document:', error);
+    //     if (error.name === 'ValidationError') {
+    //       res.status(400).json({ error: { reason: 'Invalid input data', details: error.message } });
+    //     } else {
+    //       console.error('Unhandled error:', error);
+    //       res.status(500).json({ error: { reason: 'Internal server error', details: error.message } });
+    //     }
+    //   }
+
+
+
+
