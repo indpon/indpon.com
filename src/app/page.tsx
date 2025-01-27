@@ -1,101 +1,68 @@
-import Image from "next/image";
+"use client"
+
+import { useEffect } from "react"
+import Header from "./components/header"
+import ProjectCard from "./components/projectcard"
+import { motion } from "framer-motion"
+
+const projects = [
+  {
+    title: "Jallab",
+    description: "While hardly finished, it is still a cool project that I might come back to someday, it was a website where you could make music and then other people could add onto you music with instruments or more vocals and stuff like that.",
+    link: "https://newjallab.vercel.app"
+  },
+  {
+    title: "Bmbradley's website",
+    description: "This is a website that i made for a twitch streamer, I am pretty proud of it, and it looks pretty nice.",
+    link: "https://bmbradley.vercel.app"
+  },
+  {
+    title: "Gartic Bot",
+    description: "A feature packed discord bot that I made in early 2024, it is now open source. I am now working on a new discord bot for another discord server.",
+    link: "https://github.com/indpon/Gartic-Bot/blob/main/src/bot.js"
+  },
+]
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  useEffect(() => {
+    const pattern = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#1a202c"/>
+        <circle cx="0" cy="0" r="1" fill="#4299e1" fill-opacity="0.1"/>
+        <circle cx="100" cy="0" r="1" fill="#4299e1" fill-opacity="0.1"/>
+        <circle cx="0" cy="100" r="1" fill="#4299e1" fill-opacity="0.1"/>
+        <circle cx="100" cy="100" r="1" fill="#4299e1" fill-opacity="0.1"/>
+      </svg>
+    `
+    const encodedPattern = btoa(pattern)
+    document.body.style.backgroundImage = `url('data:image/svg+xml;base64,${encodedPattern}')`
+  }, [])
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+  return (
+    <div className="bg-gray-900 min-h-screen text-white">
+      <Header />
+      <motion.main
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="container mx-auto px-4 py-12"
+      >
+        <section className="text-center mb-16">
+          <h1 className="text-5xl font-bold mb-6">
+            Welcome to <span className="text-blue-400">indpon.com</span>
+          </h1>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Here is my portfolio of projects, that i have made over the years.
+          </p>
+        </section>
+
+        <section id="projects" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} title={project.title} description={project.description} link={project.link} />
+          ))}
+        </section>
+      </motion.main>
     </div>
-  );
+  )
 }
+
