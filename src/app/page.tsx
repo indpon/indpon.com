@@ -52,7 +52,7 @@ export default function Home() {
             Welcome to <span className="text-blue-400">indpon.com</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Here is my portfolio of projects, that i have made over the years.
+            Here is my portfolio of my projects, that i have made over the years.
           </p>
         </section>
 
