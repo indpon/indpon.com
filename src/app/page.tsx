@@ -25,7 +25,20 @@ const projects = [
     title: "Simple fractions",
     description: "Something random that i made to show off to my math class and other people in my school, it doesnt look good but it can simplify your fractions if they can be simplified.",
     link: "https://simplefractions.vercel.app"
+  },
+  {
+    title: "Twitch Bot Tutorial",
+    description: "Just a simple tutorial on how to make a basic twitch bot that you can expand for your own channel with your own commands. The video shows you how to get it setup, and includes the source code for the bot if you just want to copy it from there.",
+    link: "https://www.youtube.com/watch?v=T6snzU0bow4"
+  },
+  {
+    title: "Stream avatars for my stream",
+    description: "Have you ever wanted to have your twitch avatar on my stream? Well now you can with this thing i made which i use in my stream which grabs your avatar if you are in the stream, and puts it on the stream, it is inspired by orbemorder's stream avatar which you can see if you go onto his twitch streams. Please note that it will take you to a white page unless im live and there is people watching me.",
+    link: "https://streamavatars.vercel.app"
+  
   }
+
+
 ]
 
 export default function Home() {
