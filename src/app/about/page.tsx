@@ -44,10 +44,10 @@ export default function About() {
           >
             <h2 className="text-3xl font-semibold mb-4 text-blue-400">Who I Am</h2>
             <p className="text-gray-300 mb-4">
-              I&aspos;m a developer that has been coding since i was about 10.
+              Im a developer that has been coding since i was about 10.
             </p>
             <p className="text-gray-300">
-              When im not coding, im usually just playing games, usually Roblox, GTA V, and any other games idk. Whem i am coding i primarily utilize the Next.js library.
+              When im not coding, im usually just playing games, usually Roblox, GTA V, and any other games idk. When i am coding i primarily utilize the Next.js library.
             </p>
           </motion.div>
 

@@ -21,6 +21,11 @@ const projects = [
     description: "A feature packed discord bot that I made in early 2024, it is now open source. I am now working on a new discord bot for another discord server.",
     link: "https://github.com/indpon/Gartic-Bot/blob/main/src/bot.js"
   },
+  {
+    title: "Simple fractions",
+    description: "Something random that i made to show off to my math class and other people in my school, it doesnt look good but it can simplify your fractions if they can be simplified.",
+    link: "https://simplefractions.vercel.app"
+  }
 ]
 
 export default function Home() {
